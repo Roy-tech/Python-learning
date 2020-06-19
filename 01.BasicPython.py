@@ -71,7 +71,7 @@ print(string.count("n"))
 place_up = string.upper()
 place_down = string.lower()
 
-# YOu can use ; to write two statements or arguments in one line
+# You can use ; to write two statements or arguments in one line
 print(place_up);
 print(place_down)
 
