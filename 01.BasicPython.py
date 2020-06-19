@@ -26,14 +26,14 @@ Sum = 1000
 year = 5
 Total = round(Sum * (1 + rate) ** year)
 
-# Formatted string
+# Normal string VS Formatted string
 first = 'Marry'
 last = 'Jane'
 message = first + ' [' + last + '] ' + 'is a good coder!'
 print(message)
 
 # a literal string with prefixed f contains expressions inside braces, replacing with their values
-msg = f'{first} [{last}] is a damn good coder!'
+msg = f'{first} [{last}] is a damn good coder!' # formatted string
 print(msg)
 
 # String function
