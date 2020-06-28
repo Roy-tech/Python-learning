@@ -72,3 +72,20 @@ def sum(input1,input2):
     print(input1 + input2)
 
 sum(1,2)
+
+# using lambda as function
+
+return_calculation = lambda x: (1.05*x)**2
+print(return_calculation(100))
+
+# Using lamda for multiple inputs (lambda cannot be used for muliple lines functions)
+
+fullname = lambda fn, ln: fn.strip().title() + " " + ln.strip().title() # strip() to remove space from both sides & title() to keep first letter of a word always capital
+print(fullname(' Suvra', 'roy'))
+
+# Sorting list by last name
+
+full_names = ["Athar Imtiaz", "Suvra Roy", "Robert Kyosaki", "Rylie Baxter", "Collum Thames"]
+full_names.sort(key=lambda names: names.split(" ")[1].lower()) # splitting name and choosing last name and converting last name to lower section in case anybody types wrongly
+print(full_names)
+
