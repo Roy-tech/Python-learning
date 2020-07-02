@@ -58,7 +58,7 @@ def menu1():
             if choice3 == "I" or choice3 == "i":
                 import csv
                 import operator
-                with open('/Roy/Python/Notepad.txt', 'r') as txt_file:
+                with open('/Roy/Python/Notepad.txt', 'r') as txt_file: # this method works in a joint so you need to call several times to work on 'name file'.
                     name = csv.reader(txt_file)
                     sort0 = sorted(name, key=operator.itemgetter(0))
                     for x in sort0:
