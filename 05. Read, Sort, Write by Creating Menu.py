@@ -124,4 +124,9 @@ with open('/Roy/Python/Notepad.txt', 'a') as txt_file:
     name_write.writerow(['720039', 'Claire', 'Underwood', '52'])
     name_write.writerow(['720040', 'Rachel', 'Lian', '46'])
 
-# What's wrong with writing in this way? I am getting extra line space under each line
+# Copying data from one file to another and you can even overwrite
+
+with open('Notepad.txt') as txt1:
+    with open('copy.txt', 'w', newline="") as txt2:
+        for x in txt1:
+            txt2.write(x)
