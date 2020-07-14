@@ -1,8 +1,11 @@
 # The open() function takes two parameters; filename, and mode.
 # four different methods (modes) for opening a file:
 # "r" - Read - Default value. Opens a file for reading, error if the file does not exist
+# "r+" - Open the file for reading and writing. The handle is positioned at the beginning of the file. Raises I/O error if the file does not exists
 # "a" - Append - Opens a file for appending, creates the file if it does not exist
+# "a+" - Open the file for reading and writing. The file is created if it does not exist. The handle is positioned at the end of the file. The data being written will be inserted at the end, after the existing data
 # "w" - Write - Opens a file for writing, creates the file if it does not exist
+# "w+" - Open the file for reading and writing. For existing file, data is truncated and over-written. The handle is positioned at the beginning of the file
 # "x" - Create - Creates the specified file, returns an error if the file exists
 # you can specify if the file should be handled as binary or text mode
 # "t" - Text - Default value. Text mode
